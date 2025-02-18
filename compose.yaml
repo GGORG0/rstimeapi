@@ -1,0 +1,7 @@
+services:
+  trashbot:
+    image: ghcr.io/ggorg0/rstimeapi:master
+    pull_policy: always
+    build:
+      context: .
+    restart: unless-stopped
